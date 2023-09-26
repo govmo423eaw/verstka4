@@ -1,0 +1,376 @@
+*{
+    box-sizing: border-box;
+}
+
+body        {
+background-color: #621402;
+font-family: 'Roboto', sans-serif;
+color: #fff;
+}
+.navbar {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+.header {
+    min-height: 100vh;
+
+    background: linear-gradient(180deg, rgba(98,20,2,0.31) 0%, #621402 85.62%),
+     url("../img/bg.jpg")no-repeat center top / cover;
+}
+.menu-link
+{
+    color: white;
+    text-decoration: none;
+}
+.container
+{
+max-width: 1170px;
+margin:auto;
+}
+
+.menu
+{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    margin-left: 17px;
+
+}
+.menu-item 
+{
+    margin-right: 25px;
+}
+.avatar 
+{
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    margin-left: 11px;
+}
+.user {
+ margin-left: auto;
+ color: white;
+ display: flex;
+ align-items: center;
+}
+.film{
+    margin-top: 60px;
+    color: white;
+}
+.film-title-small{
+    opacity: 0.5;
+    font-size: 24px;
+    line-height: 150%;
+}
+.film-title{
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 11px;
+    margin-bottom: 23px;
+}
+.film-description{
+    font-size: 16px;
+    line-height: 150%;
+    min-width: 560px;
+    -webkit-text-stroke: 0.6px rgb(0, 0, 2);
+
+}
+.film { 
+    display: flex;
+    align-items: center;
+}
+.film-trailer{
+    margin: auto;
+
+}
+.film-details{
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.time {
+    display: flex;
+    align-items: center;
+}
+.time-icon{
+    margin-right: 14px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    margin-left: 34px;
+
+}
+.rating-current {
+    font-size: 24px;
+    line-height: 150%;
+}
+.rating-icon{
+    margin-right: 14px;
+}
+.session {
+    margin-top: 62px;
+   padding-top: 46px;
+   padding-bottom: 63px;
+   border-top: 1px solid rgba(255,255,255,0.5);
+   border-BOTTOM: 1px solid rgba(255,255,255,0.5);
+   display: flex;
+   justify-content: space-between;
+   align-items: flex-start;
+}
+.session-label{
+    display: block;
+    margin-bottom: 20px;
+}
+.session-date-block{
+    display: flex;
+}
+.session-date-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: background-color 0.2s;
+}
+.session-month{
+    font-size: 16px;
+    line-height:19px;
+}
+.session-day{
+    font-weight: 90px;
+    font-size: 30px;
+    line-height:35px;
+}
+.session-week{
+        font-size: 19px;
+        line-height: 22px;
+}
+.session-date-item:hover{
+    background-color: #fe8e05;
+    color: #621402;
+}
+.select{
+    background-color:#621402 ;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    color:#fff ;
+    padding: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+.select-cinema {
+    min-width: 470px;
+}
+.scheme {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background: rgba(36, 36, 36, 0.18);
+}
+
+.scheme path:not(.light) {
+    fill: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.scheme path:not(.light):hover {
+    fill: rgba(255, 255, 255, 0.5);
+}
+
+.scheme path.booked,
+.scheme path.booked:hover {
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+}
+.scheme path.active,
+.scheme path.active:hover {
+    fill: #FE8E05;    
+}
+
+.legend{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.50);
+    max-width: 1024px;
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 38px;
+}
+.legend-label{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.legend svg{
+    margin-right: 16.82px;
+}
+.price{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.price-label{
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+}
+.price-tag{
+    font-size: 52px;
+    line-height: 61px;
+}
+.button{
+    display: block;
+    background: #fe8e05;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 24px 52px;
+    text-decoration: none;
+}
+.frame{    
+    width: 390px; 
+    height: 220px;
+    display: none;   
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;         
+}
+#gray{
+    background-color: rgba(1,1,1,0.75);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; 
+    z-index: 100;   
+}
+.add{
+    display: block;   
+}
+.add-minus{
+    display: none;
+}
+
+@media(max-width:1200px){
+    .container{
+        max-width: 960px;
+    }
+    .select-cinema{
+        width: 70%;
+    }
+
+}
+@media (max-width: 985px){
+    .container{
+        max-width: 750px;
+    }
+    .session {
+        flex-wrap: wrap;
+    }
+    .session-date{
+        flex-basis: 70%;
+        margin-bottom: 40px;
+    }
+    .sesion-time{
+        order: 2;
+    }
+    .session-cinema{  
+        width: 69%;  
+        order: 3;
+    }
+    .menu-item{
+        margin-right: 20px;
+    }
+
+}
+@media (max-width: 770px){
+    .container{
+        max-width: 560px;
+    }
+    .menu{
+        position: absolute;
+        left: 0;
+        top: 40px;
+        padding: 20px;
+        margin-left: 10px;
+        flex-direction: column;
+        background-color: #621402;
+        z-index: 5;
+        border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateX(-20%);
+        transition: opacity 0.4s, transform 0.5s;
+        
+    }
+    
+    .menu-item:not(:last-child){
+        margin-bottom: 10px;
+    }
+
+    .m-menu{
+        display: block;
+        background-color: transparent;
+        border: none;
+        width: 30px;
+        height: 30px;              
+        padding-left: 10px;
+        cursor: pointer;
+        
+    }
+
+    .is-open{
+        opacity: 1;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .film-description{
+        margin-right: 30px;
+    }
+    .film{
+        flex-direction: column;
+
+    }
+    .film-trailer{
+        margin: 40px auto 0px;       
+    }
+    .legend-label{
+        margin-right: 15px;       
+    }
+    
+}
+@media (max-width: 390px){ /*Для Iphone 12 Pro */
+    .legend-label{
+        font-size: 12px;
+    }
+    .button{                     
+        font-size: 17px;
+        line-height: 15px; 
+        width: 200px;  
+        padding-left: 25px; 
+        padding-right: 25px;
+          
+    }
+    .price-tag{
+        font-size: 40px;
+        line-height: 61px;
+    }
+    .session-date-item{
+        width: 75px;
+        height: 75px;
+    }
+}
